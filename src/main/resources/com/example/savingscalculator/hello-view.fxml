@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.17336683417085427" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.savingscalculator.HelloController">
+
+    <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label layoutX="89.0" layoutY="25.0" prefHeight="17.0" prefWidth="329.0" text="Kalkulator oszczędności" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label layoutX="14.0" layoutY="120.0" text="Jakie jest oprocentowanie konta  w skali roku?" />
+            <TextField fx:id="Kapitał" layoutX="14.0" layoutY="26.0" />
+            <TextField fx:id="Czas" layoutX="14.0" layoutY="83.0" />
+            <TextField fx:id="Oprocentowanie" layoutX="14.0" layoutY="148.0" />
+            <TextField fx:id="Składka" layoutX="333.0" layoutY="47.0" />
+            <Label layoutX="287.0" layoutY="2.0" prefHeight="48.0" prefWidth="281.0" text="Miesięczna kwota, która pomoże Ci osiągnąć cel:" />
+            <Button fx:id="Calculate" layoutX="32.0" layoutY="279.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" text="Oblicz" />
+            <Label layoutX="18.0" layoutY="6.0" text="Ile chcesz zaoszczędzić?" />
+            <Label layoutX="18.0" layoutY="60.0" text="Przez ile miesięcy możesz oszczędzać?" />
+            <Label layoutX="14.0" layoutY="180.0" text="Aktualna wysokość podatku:" />
+            <TextField fx:id="Podatek" layoutX="14.0" layoutY="207.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
